@@ -1,0 +1,22 @@
+@use '../styles/mixins/fonts' as f;
+@use '../styles/mixins/responsive' as r;
+
+.custom-p {
+  @include f.smallSubTitle;
+}
+
+.media-query {
+  color: blue;
+}
+
+@include r.media-query(medium) {
+  .media-query {
+    color: red;
+  }
+}
+
+@include r.media-query(large) {
+  .media-query {
+    color: gray;
+  }
+}

@@ -1,0 +1,29 @@
+@use 'styles/mixins/fonts';
+@use 'styles/mixins/responsive' as r;
+@use 'styles/mixins/utils';
+@use 'styles/reset';
+@use 'styles/variables';
+
+h1 {
+  @include fonts.veryBigTitle;
+}
+
+h2 {
+  @include fonts.bigTitle;
+}
+
+h3 {
+  @include fonts.title;
+}
+
+h4 {
+  @include fonts.smallTitle;
+}
+
+h5 {
+  @include fonts.subTitle;
+}
+
+h6 {
+  @include fonts.bigSubTitle;
+}

@@ -1,0 +1,67 @@
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin font(
+  $weight,
+  $size,
+  $line-height,
+  $color: var(--color-black),
+  $style: normal,
+  $family: var(--font-family)
+) {
+  font-weight: $weight;
+  @include font-size($size);
+  line-height: $line-height;
+  color: $color;
+  font-family: $family;
+  font-style: $style;
+}
+
+@mixin veryBigTitle {
+  @include font(700, 64px, 110%);
+}
+
+@mixin bigTitle {
+  @include font(700, 40px, 120%);
+}
+
+@mixin title {
+  @include font(700, 32px, 130%);
+}
+
+@mixin smallTitle {
+  @include font(700, 28px, 140%);
+}
+
+@mixin bigSubTitle {
+  @include font(700, 26px, 140%);
+}
+
+@mixin subTitle {
+  @include font(700, 24px, 140%);
+}
+
+@mixin smallSubTitle {
+  @include font(700, 20px, 150%);
+}
+
+@mixin bigBody {
+  @include font(700, 18px, 150%);
+}
+
+@mixin body {
+  @include font(700, 16px, 160%);
+}
+
+@mixin smallBody {
+  @include font(700, 14px, 160%);
+}
+
+@mixin caption {
+  @include font(700, 12px, 160%);
+}
+
+@mixin smallCaption {
+  @include font(700, 10px, 140%);
+}

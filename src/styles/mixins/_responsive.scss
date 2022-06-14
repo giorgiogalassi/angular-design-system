@@ -1,0 +1,14 @@
+$breakpoints: (
+  small: 480px,
+  medium: 800px,
+  large: 1024px,
+);
+
+@mixin media-query($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+
+  // If the browser window is $mq-breakpoint or bigger, the content will be applied:
+  @media screen and (min-width: #{$mq-breakpoint}) {
+    @content;
+  }
+}
